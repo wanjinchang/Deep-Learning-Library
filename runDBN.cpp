@@ -25,16 +25,13 @@ int main()
 	labelPixelToData(trainingLabel);
 	labelPixelToData(testingLabel);
 	
-	DBN dbn(MSE);
-	std::vector<size_t> k;
-	k.push_back(500);
-	//k.push_back(300);
-	//k.push_back(200);
-	dbn.setLayer(k);
+	std::vector<size_t> arch;
+	arch.push_back(500);
+	arch.push_back(300);
+	DBN dbn(arch);
 	//dbn.train(testingData, 5);
-	dbn.classifier(testingData, testingLabel, 6);
-	dbn.fineTuning(testingData, testingLabel, 20);
+	dbn.classifier(trainingData, trainingLabel, 7);
+	dbn.fineTuning(trainingData, trainingLabel, 8);
 	dbn.classify(testingData, testingLabel);
-	
 	return 0;
 }
