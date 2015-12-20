@@ -972,7 +972,6 @@ classificationError classify(RBM classiferModel, dataInBatch &testingSet, dataIn
 		data predictionDIST = softmaxACT(batchData, classWeight, classBias);
 		indexLabel il = maxIdxInRow(predictionDIST);
 		data labelMatrix = oneOfK(il, labelDim);
-		std::cout << batchLabel.type() << " " << labelMatrix.type() << std::endl;
 		batchError = sum(abs(labelMatrix - batchLabel))[0] / 2;
 		totalError += batchError;
 	}
