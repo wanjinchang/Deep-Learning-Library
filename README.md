@@ -1,5 +1,13 @@
 # MDL-code
-This is the source code of MDL.
+This is the source code of A C++ library for Multimodal Deep Learning.
+http://arxiv.org/abs/1512.06927
+Modules include:
+   Restricted Boltzmann Machine,
+   Deep Neural Network, 
+   Deep Belief Network, 
+   Deep Boltzmann Machine, 
+   Denoising Autoencoder, 
+   Deep Canonical Correlation Analysis.
 
 LICENSE
 =======
