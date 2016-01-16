@@ -1,4 +1,4 @@
-# MDL-code
+# A C++ library for Multimodal Deep Learning
 This is the source code of A C++ library for Multimodal Deep Learning.
 http://arxiv.org/abs/1512.06927
 Modules include:
