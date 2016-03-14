@@ -1,5 +1,8 @@
 # Deep-Learning-Library
-Author-Jian Jin
+Author-Jian Jin,
+
 MIT license,
-Document
+
+Document:
+
 http://arxiv.org/abs/1512.06927
