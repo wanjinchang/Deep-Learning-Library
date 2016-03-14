@@ -1,6 +1,0 @@
-export PATH='/Applications/MATLAB_R2014b.app/bin':$PATH
-echo $PATH
-
-export DYLD_LIBRARY_PATH='/Applications/MATLAB_R2014b.app/bin/maci64:/Applications/MATLAB_R2014b.app/sys/os/maci64':$DYLD_LIBRARY_PATH
-
-g++ -o engdemo_terminal engdemo.c -I/Applications/MATLAB_R2014b.app/extern/include/ -L/Applications/MATLAB_R2014b.app/bin/maci64 -leng -lmx -lm -lmat -lut -lstdc++
