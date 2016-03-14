@@ -10,27 +10,6 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include "util.hpp"
 
-/*
-cv::Mat sigmoidACT(cv::Mat &v, cv::Mat &p, cv::Mat &b)
-{
-	cv::Mat product = v * p;
-	cv::Mat output;
-	output.create(v.rows, p.cols, CV_64FC1);
-	double *PtrP;
-	double *PtrO;
-	double *PtrB;
-	PtrB = b.ptr<double>(0);
-	for (int i = 0; i < output.rows; i++){
-		PtrO = output.ptr<double>(i);
-		PtrP = product.ptr<double>(i);
-		for (int j = 0; j < output.cols; j++){
-			PtrO[j] = (double) 1 / (1 + exp(-PtrP[j] - PtrB[j]));
-		}
-	}
-	return output;
-}
-*/
-
 cv::Mat sigmoidACT(cv::Mat &v, cv::Mat &p, cv::Mat &b)
 {
 	cv::Mat netIn = v * p + repeat(b, v.rows, 1);
